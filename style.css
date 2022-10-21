@@ -54,9 +54,12 @@ div[title="main contents"]{
     align-items: strech;
     flex-direction: column;
     justify-items:strech;
-    padding:1%;
+    margin:1%;
 }
 
+div>h2, div>p{
+    margin:1%;
+}
 
 article {
     margin:1%;
@@ -70,6 +73,7 @@ div[title="articles"]{
     display: flex;
     align-items: strech;
     justify-items:strech;
+    margin:1%;
 }
 
 
