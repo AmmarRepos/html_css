@@ -1,9 +1,9 @@
 * {
     border: 1px solid #000;
-    margin:0px;
 }
-body {
-    font-family: sans-serif;
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
     width: 1024px;
     background-color: gray;
 }
@@ -13,77 +13,98 @@ header {
     align-items: strech;
 }
 
-h1 {
-    background-color: rgb(255, 255, 128);
-    flex-grow:1;
+header>* {
+    margin:0px;
 }
 
-header>ol {
+h1 {
+    background-color: rgb(255, 255, 128);
+    flex:1 1 content;
+}
+
+header>dl {
     background-color: blue;
     display: flex;
     justify-content: start;
     align-items: strech;
-    flex-grow:1;
-    text-align: center;
-    padding:0px;
+    flex:1 1 content;
+    text-align: left;
 }
 
-header>ol>li {
+header>dl>li {
     display:  inline;
     background-color: #74992e;
-    vertical-align: middle;
-    padding:1%;
+    padding:2%;
 }
-
 
 header>a {
     text-align: center;
-    flex-grow:1;
+    flex:1 1 content;
     background-color: pink;
+    padding:1%;
 }
 
-footer {
-    padding:1em;
-    background-color: blue;
+div[title="middle part"]{
+    display: flex;
+    background-color: black;
+}
+
+div[title="middle part"]>*{
+    padding:2%;
 }
 
 div[title="main contents"]{
     background-color: yellow;
-    display: inline-flex;
-    width:74%;
+    display: flex;
+    flex:2 1 content;
     align-items: strech;
     flex-direction: column;
     justify-items:strech;
-    margin:1%;
 }
-
-div>h2, div>p{
-    margin:1%;
-}
-
-article {
-    margin:1%;
-    flex-grow:2;
-    background-color: green;
-}
-
 
 div[title="articles"]{
     background-color: yellow;
     display: flex;
+    flex-wrap: wrap;
     align-items: strech;
     justify-items:strech;
-    margin:1%;
 }
 
+article {
+    margin:1%;
+    flex: 1 1 47%;
+    background-color: green;
+}
 
 aside {
     background-color: red;
     display:inline-flex;
-    align-items: strech;
     flex-direction: column;
-    width:20%;
-    padding:1%;
+    flex:1 2 content;
 }
 
+footer {
+    padding:1%;
+    background-color: blue;
+    text-align:center;
+}
 
+.form {
+    padding:15%;
+}
+
+.form>* {
+    border-radius: 5%;
+}
+
+.form>*[type="text"]{
+    display:block;
+}
+
+input[type="password"]{
+    display:block;
+}
+
+.form>h2 {
+    text-transform: uppercase;
+}
