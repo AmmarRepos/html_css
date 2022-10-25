@@ -1,5 +1,5 @@
 * {
-    border: 1px solid #000;
+    /*border: 1px solid #000;*/
 }
 
 html {
@@ -11,10 +11,12 @@ html {
 header {
     display: flex;
     align-items: strech;
+    border: 1px solid #000;
 }
 
 header>* {
     margin:0px;
+    border: 1px solid #000;
 }
 
 h1 {
@@ -22,7 +24,7 @@ h1 {
     flex:1 1 content;
 }
 
-header>dl {
+nav {
     background-color: blue;
     display: flex;
     justify-content: start;
@@ -31,10 +33,11 @@ header>dl {
     text-align: left;
 }
 
-header>dl>li {
+header>nav>li {
     display:  inline;
     background-color: #74992e;
     padding:2%;
+    border: 1px solid #000;
 }
 
 header>a {
@@ -51,12 +54,13 @@ div[title="middle part"]{
 
 div[title="middle part"]>*{
     padding:2%;
+    align-content: center;
 }
 
 div[title="main contents"]{
     background-color: yellow;
     display: flex;
-    flex:2 1 content;
+    flex:2 1 70%;
     align-items: strech;
     flex-direction: column;
     justify-items:strech;
@@ -68,6 +72,7 @@ div[title="articles"]{
     flex-wrap: wrap;
     align-items: strech;
     justify-items:strech;
+    flex:1 1 content;
 }
 
 article {
@@ -80,7 +85,7 @@ aside {
     background-color: red;
     display:inline-flex;
     flex-direction: column;
-    flex:1 2 content;
+    flex:1 1 30%;
 }
 
 footer {
@@ -91,6 +96,7 @@ footer {
 
 .form {
     padding:15%;
+       border-radius: 5%;
 }
 
 .form>* {
@@ -107,4 +113,21 @@ input[type="password"]{
 
 .form>h2 {
     text-transform: uppercase;
+}
+
+article>div>img {
+    height:200px;
+    width:200px;
+    object-fit: fill;
+    object-position: 50% 50%;
+}
+
+input[type="reset"]{
+    background-color: red;
+    border-radius: 10%;
+}
+
+input[type="button"]{
+    background-color: orange;
+    border-radius: 10%;
 }
