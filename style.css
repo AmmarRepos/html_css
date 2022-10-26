@@ -6,6 +6,8 @@ html {
     font-family: Helvetica, Arial, sans-serif;
     width: 1024px;
     background-color: gray;
+    align-content: center;
+    margin: auto;
 }
 
 header {
@@ -47,17 +49,17 @@ header>a {
     padding:1%;
 }
 
-div[title="middle part"]{
+#middle_part{
     display: flex;
     background-color: black;
 }
 
-div[title="middle part"]>*{
+#middle_part>*{
     padding:2%;
     align-content: center;
 }
 
-div[title="main contents"]{
+#main_contents{
     background-color: yellow;
     display: flex;
     flex:2 1 70%;
@@ -66,7 +68,7 @@ div[title="main contents"]{
     justify-items:strech;
 }
 
-div[title="articles"]{
+#articles{
     background-color: yellow;
     display: flex;
     flex-wrap: wrap;
