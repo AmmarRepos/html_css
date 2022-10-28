@@ -28,15 +28,27 @@ h1 {
 
 nav {
     background-color: blue;
-    display: flex;
+    display: inline-flex;
     justify-content: start;
     align-items: strech;
-    flex:1 1 content;
+    flex:3 1 content;
     text-align: left;
 }
 
-header>nav>li {
+header>nav>ul {
+    display: flex;
+    background-color: purple;
+    padding:0;
+    margin:0;
+    justify-content: start;
+    align-items: strech;
+    flex:1 1 content;
+
+}
+
+header>nav>ul>li {
     display:  inline;
+    align-items: strech;
     background-color: #74992e;
     padding:2%;
     border: 1px solid #000;
@@ -97,9 +109,12 @@ footer {
 }
 
 .form {
-    border: 1px solid #000;
+    margin: 5%;
+    background-color: yellow;
+    border: 1px solid black;
     padding:15%;
     border-radius: 5%;
+    flex:1 1 content;
 }
 
 .form>* {
